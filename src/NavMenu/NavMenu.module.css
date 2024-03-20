@@ -1,0 +1,42 @@
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  background-color: #e7f1f7;
+  transition: 0.5s;
+  color: #116faf;
+}
+.menuItem:hover svg {
+  stroke: #116faf;
+}
+.menuItem {
+  position: relative;
+  padding-left: 10px; /* Добавляем немного отступа слева для размещения полоски */
+}
+
+.menuItem:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px; /* Ширина полоски */
+  height: 100%; /* Высота полоски */
+  background-color: #116faf; /* Цвет полоски */
+}
