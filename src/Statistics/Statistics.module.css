@@ -1,0 +1,32 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: blueviolet;
+}
+.fourRows {
+  display: flex;
+
+  background-color: aquamarine;
+}
+.miniCard {
+  border: 1px solid red;
+  width: 100%;
+  height: 10vh;
+}
+.threeRows {
+  background-color: blue;
+  display: flex;
+}
+.smallCard {
+  flex-grow: 1;
+}
+.bigCard {
+  background-color: red;
+  flex-grow: 2;
+}

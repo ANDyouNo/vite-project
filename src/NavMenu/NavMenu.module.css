@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 20vh;
 }
 .menu {
   display: flex;
@@ -13,9 +15,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 22px;
+  justify-content: center;
+  padding: 20px 8px;
   transition: 0.5s;
   text-decoration: none;
+  color: #8a9097;
+  position: relative;
+}
+.menuItem span {
+  margin-top: 4px;
 }
 
 .menuItem:hover {
@@ -23,20 +31,84 @@
   transition: 0.5s;
   color: #116faf;
 }
-.menuItem:hover svg {
-  stroke: #116faf;
+/* Применяем стили только к элементам с fill */
+.menuItem:hover svg path[fill] {
+  fill: #116faf;
+  transition: 0.5s;
 }
-.menuItem {
-  position: relative;
-  padding-left: 10px; /* Добавляем немного отступа слева для размещения полоски */
+.menuItem:hover svg path[fill] {
+  transition: 0.5s;
 }
 
-.menuItem:hover::before {
+/* Применяем стили только к элементам с stroke */
+.menuItem:hover svg path[stroke] {
+  stroke: #116faf;
+  transition: 0.5s;
+}
+.menuItem:hover svg path[stroke] {
+  transition: 0.5s;
+}
+
+.menuItem::before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
-  width: 2px; /* Ширина полоски */
-  height: 100%; /* Высота полоски */
-  background-color: #116faf; /* Цвет полоски */
+  width: 0; /* Изначально установите ширину полоски на 0 */
+  height: 100%;
+  background-color: #116faf;
+  /* transition: width 0.5s ease; Анимируйте изменения ширины за 0.5 секунды с плавным переходом */
+}
+
+.menuItem:hover::before {
+  width: 2px; /* Установите желаемую ширину полоски при наведении */
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 8px;
+  transition: 0.5s;
+  text-decoration: none;
+  color: #8a9097;
+  position: relative;
+  background-color: #e7f1f7;
+  transition: 0.5s;
+  color: #116faf;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0; /* Изначально установите ширину полоски на 0 */
+  height: 100%;
+  background-color: #116faf;
+  transition: width 0.5s ease; /* Анимируйте изменения ширины за 0.5 секунды с плавным переходом */
+  width: 2px; /* Установите желаемую ширину полоски при наведении */
+}
+
+.active span {
+  margin-top: 4px;
+}
+
+/* Применяем стили только к элементам с fill */
+.active svg path[fill] {
+  fill: #116faf;
+  transition: 0.5s;
+}
+.active svg path[fill] {
+  transition: 0.5s;
+}
+
+/* Применяем стили только к элементам с stroke */
+.active svg path[stroke] {
+  stroke: #116faf;
+  transition: 0.5s;
+}
+.active svg path[stroke] {
+  transition: 0.5s;
 }
