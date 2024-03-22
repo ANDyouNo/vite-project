@@ -33,8 +33,10 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .bigCard {
-  background-color: red;
-  width: 300px;
+  background-color: antiquewhite;
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
 }
 
 @property --p {
@@ -134,4 +136,72 @@
   display: flex;
   flex-direction: column;
   gap: 28px;
+}
+
+.headerLine {
+  display: flex;
+  justify-content: space-around;
+}
+.infoLine {
+  display: flex;
+  justify-content: space-around;
+}
+
+.order {
+  height: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price {
+  height: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tax {
+  height: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.customer {
+  height: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.driver {
+  height: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orders {
+  display: flex;
+  flex-direction: column;
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+}
+
+.taxes {
+  display: flex;
+  flex-direction: column;
+}
+.customers {
+  display: flex;
+  flex-direction: column;
+}
+.drivers {
+  display: flex;
+  flex-direction: column;
 }

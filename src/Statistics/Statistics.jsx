@@ -37,6 +37,16 @@ function Statistics() {
     },
   ];
 
+  const orders = [
+    {
+      orderNumber: "98H8594B",
+      price: 3400,
+      tax: 300,
+      customer: "Западная грузовая компания",
+      driver: "Иван Дока",
+    },
+  ];
+
   const percentage = 80;
   const color = "lightgreen";
 
@@ -101,7 +111,43 @@ function Statistics() {
           </div>
         </div>
 
-        <div className={styles.bigCard}>big</div>
+        <div className={styles.bigCard}>
+          <div className={styles.orders}>
+            <h5>Заказы</h5>
+            <button className={styles.order}>{orders[0].orderNumber}</button>
+            <button className={styles.order}>{orders[0].orderNumber}</button>
+            <button className={styles.order}>{orders[0].orderNumber}</button>
+          </div>
+
+          <div className={styles.prices}>
+            <h5>Стоимость</h5>
+            <span className={styles.price}>{orders[0].price}</span>
+            <span className={styles.price}>{orders[0].price}</span>
+            <span className={styles.price}>{orders[0].price}</span>
+          </div>
+
+          <div className={styles.taxes}>
+            <h5>Налог</h5>
+            <span className={styles.tax}>{orders[0].tax}</span>
+            <span className={styles.tax}>{orders[0].tax}</span>
+            <span className={styles.tax}>{orders[0].tax}</span>
+          </div>
+
+          <div className={styles.customers}>
+            <h5>Клиент</h5>
+            <button className={styles.customer}>{orders[0].customer}</button>
+            <button className={styles.customer}>{orders[0].customer}</button>
+            <button className={styles.customer}>{orders[0].customer}</button>
+          </div>
+
+          <div className={styles.drivers}>
+            <h5>Водитель</h5>
+            <span className={styles.driver}>{orders[0].driver}</span>
+            <span className={styles.driver}>{orders[0].driver}</span>
+            <span className={styles.driver}>{orders[0].driver}</span>
+          </div>
+        </div>
+
         <div className={styles.smallCard}>
           <h3 className={styles.summaryHeader}>
             Все заказы на этой неделе {data[0].orders.total}
