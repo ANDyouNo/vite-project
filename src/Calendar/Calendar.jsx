@@ -2,9 +2,13 @@ import React from "react";
 import styles from "./Calendar.module.css";
 
 function Calendar() {
+  const data = {
+    start: Date.now(),
+    end: Date.now(),
+  };
   return (
     <>
-      <button>Каледрарь</button>
+      <button className={styles.calendarButton}></button>
     </>
   );
 }

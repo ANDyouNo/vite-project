@@ -1,6 +1,10 @@
 import React from "react";
 import TopBar from "../TopBar/TopBar";
 import Calendar from "../Calendar/Calendar";
+import OrderStat from "../assets/OrderStat";
+import PaidStat from "../assets/PaidStat";
+import NonpaidStat from "../assets/NonpaidStat";
+import ZpStat from "../assets/ZpStat";
 
 import styles from "./Statistics.module.css";
 
@@ -63,10 +67,49 @@ function Statistics() {
         <Calendar></Calendar>
       </div>
       <div className={styles.fourRows}>
-        <div className={styles.miniCard}>1</div>
-        <div className={styles.miniCard}>2</div>
-        <div className={styles.miniCard}>3</div>
-        <div className={styles.miniCard}>4</div>
+        <div className={styles.miniCard}>
+          <div
+            className={styles.icon}
+            style={{ "background-color": "#e8f0fa" }}
+          >
+            <OrderStat></OrderStat>
+          </div>
+          <span className={styles.statName}>Все заказы на этой неделе</span>
+          <span className={styles.statValue}>₽ {data[0].value}</span>
+        </div>
+
+        <div className={styles.miniCard}>
+          <div
+            className={styles.icon}
+            style={{ "background-color": "#EDF8F4" }}
+          >
+            <PaidStat></PaidStat>
+          </div>
+          <span className={styles.statName}>Все заказы на этой неделе</span>
+          <span className={styles.statValue}>₽ {data[0].value}</span>
+        </div>
+
+        <div className={styles.miniCard}>
+          <div
+            className={styles.icon}
+            style={{ "background-color": "#FDECE9" }}
+          >
+            <NonpaidStat></NonpaidStat>
+          </div>
+          <span className={styles.statName}>Все заказы на этой неделе</span>
+          <span className={styles.statValue}>₽ {data[0].value}</span>
+        </div>
+
+        <div className={styles.miniCard}>
+          <div
+            className={styles.icon}
+            style={{ "background-color": "#FEF6EE" }}
+          >
+            <ZpStat></ZpStat>
+          </div>
+          <span className={styles.statName}>Все заказы на этой неделе</span>
+          <span className={styles.statValue}>₽ {data[0].value}</span>
+        </div>
       </div>
       <div className={styles.threeRows}>
         <div className={styles.smallCard}>
