@@ -1,3 +1,20 @@
 .calendarButton {
-  
+  width: 260px;
+  height: 50px;
+  background-color: #F3F5FA;
+  border: 1px solid #E9EBEF;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.calendarButton:hover {
+  cursor: pointer;
+}
+
+.text {
+  margin-top: 3px;
+  margin-left: 10px;
 }

@@ -1,0 +1,263 @@
+
+
+.threeRows {
+  background-color: #F3F5FA;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.smallCard {
+  display: flex;
+  flex-direction: column;
+  width: 415px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff
+}
+.bigCard {
+  background-color: white;
+  width: 865px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+@property --p {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+.pie {
+  --p: 90;
+  --b: 8px;
+  --c: darkred;
+  --w: 100px;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  margin: 5px;
+  place-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+.pie:before,
+.pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.pie:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b)
+      var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+}
+.pie::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: lightgray; /* Цвет подложки */
+  border-radius: 50%; /* Закругление краев */
+}
+.pie:after {
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  transform: rotate(calc(var(--p) * 3.6deg))
+    translateY(calc(50% - var(--w) / 2));
+}
+.animate {
+  animation: p 1s 0.5s both;
+}
+.no-round:before {
+  background-size: 0 0, auto;
+}
+.no-round:after {
+  content: none;
+}
+@keyframes p {
+  from {
+    --p: 0;
+  }
+}
+
+.daigramsContainer {
+  padding: 42px 27px 37px 37px;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+.diagram {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.diagramLegend {
+  text-align: right;
+  font-size: 22px;
+}
+.summaryHeader {
+  font-size: 22px;
+  padding: 32px 0 20px 42px;
+  border-bottom: 1px solid #e9ebef;
+}
+
+.ordersLine {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.ordersContainer {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.order {
+  height: 30px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 23px 48px 20px 48px;
+  border: 1px solid #E9EBEF;
+  border-radius: 5px;
+  transition: background-color .5s;
+  font-weight: bold;
+  font-size: 18px;
+}
+.order:hover {
+  background-color: #E9EBEF;
+  border: 1px solid #E9EBEF;
+  transition: .5s;
+  cursor: pointer;
+}
+.price {
+  height: 30px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2460B2;
+  font-weight: bold;
+  font-size: 18px;
+}
+.tax {
+  height: 30px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.customer {
+  height: 30px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 17px 10px 14px 10px;
+  border: 1px solid #E9EBEF;
+  border-radius: 5px;
+  transition: background-color .5s;
+  font-weight: bold;
+}
+.customer:hover {
+  background-color: #E9EBEF;
+  border: 1px solid #E9EBEF;
+  transition: .5s;
+  cursor: pointer;
+}
+.driver {
+  height: 30px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.orders {
+  display: flex;
+  flex-direction: column;
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+}
+
+.taxes {
+  display: flex;
+  flex-direction: column;
+}
+.customers {
+  display: flex;
+  flex-direction: column;
+}
+.drivers {
+  display: flex;
+  flex-direction: column;
+}
+
+.headers {
+  text-transform: uppercase;
+  color: #B9BDC1;
+  margin: 64px 0 8px 0;
+}
+
+
+
+table {
+  width: 100%; /* Задаем ширину таблицы на 100% */
+  border-collapse: collapse; /* Объединяем границы ячеек */
+}
+
+
+
+tr {
+  display: flex;
+  justify-content: space-around;
+  padding: 22px 0 22px 0;
+  border-bottom: 1px solid #E9EBEF;
+  align-items: center;
+}
+tr:nth-child(1) {
+  border-bottom: 1px solid #E9EBEF;
+  padding: 0;
+}
+
+.headers:nth-child(1) {
+  width: 183px;
+}
+.headers:nth-child(2) {
+  width: 40px;
+}
+.headers:nth-child(3) {
+  width: 25px;
+}
+.headers:nth-child(4) {
+  width: 162px;
+}
+.headers:nth-child(5) {
+  width: 76px;
+}

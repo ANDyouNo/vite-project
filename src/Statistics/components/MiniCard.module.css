@@ -1,0 +1,67 @@
+.fourRows {
+  display: flex;
+  gap: 34px;
+  margin-bottom: 30px;
+}
+.miniCard {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #fff;
+  padding: 0px 0 0 30px;
+  border-radius: 6px;
+}
+.icon {
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  margin-bottom: 24px;
+  margin-top: 20px;
+}
+
+.statValue {
+  font-size: 48px;
+  margin-bottom: 38px;
+}
+.statName {
+  font-size: 15px;
+  color: #8a8f97;
+  margin-bottom: 28px;
+}
+
+.lastCard {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  padding: 0px 0 0 30px;
+  border-radius: 6px;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.microCard {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex: 1;
+  width: 128px;
+  align-items: center;
+  padding: 10px;
+}
+.microCardName {
+  color: #8A9097;
+  font-size: 14px;
+}
+.microCardValue {
+  font-weight: bold;
+  font-size: 18px;
+}

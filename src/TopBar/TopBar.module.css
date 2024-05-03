@@ -1,20 +1,81 @@
 .wrapper {
   width: 100%;
-  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
 }
 
 .searchBar {
   width: 100%;
   padding: 8px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-bottom: 16px;
+  font-weight: normal;
+  
+  font-size: 16px;
+  padding: 12px 0 12px 14px;
 }
 
 .searchBar:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+  border: none;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  border: 1px solid #E9EBEF;
+  border-radius: 6px;
+  padding: 0 0 0 16px;
+  background-color: #FFF;
+  width: 1023px;
+}
+
+.SImg {
+  margin-left: 10px;
+  margin-right: 10px; /* Расстояние между изображением и текстовым полем */
+}
+
+
+.userWrapper {
+  display: flex;
+}
+.userSpace {
+  display: flex;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 6px;
+}
+.userAvatar {
+  width: 35px;
+  height: 35px;
+  margin-left: 15px;
+}
+.userName {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.userOptions {
+  background-color: #FFF;
+  border: none;
+  margin-left: 10px;
+  padding: 5px 20px 0 20px;
+}
+.userOptions:hover {
+  cursor: pointer;
+}
+.notifications {
+  background-color: #FFF;
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.notifications:hover {
+  cursor: pointer;
 }
