@@ -1,0 +1,152 @@
+.wrap {
+  background-color: #fff;
+  height: 100vh;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+}
+.direction {
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 23px 30px 20px 30px;
+  border: 1px solid #e9ebef;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+  font-weight: bold;
+  font-size: 15px;
+}
+.direction:hover {
+  background-color: #e9ebef;
+  border: 1px solid #e9ebef;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.phone {
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2460b2;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 42px;
+}
+
+.details {
+  padding: 30px 20px 0 20px;
+}
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sign {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #b9bdc1;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+.value {
+  font-size: 16px;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+.notes {
+  padding: 0 30px;
+}
+.notes h5 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #b9bdc1;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.records {
+  border: 1px solid #b9bdc1;
+  border-radius: 6px;
+}
+.header {
+  border-bottom: 1px solid #b9bdc1;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recordsBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+.recordsBody span {
+  font-size: 14px;
+  color: #b9bdc1;
+}
+.edit span {
+  margin-left: 5px;
+}
+.edit {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 23px 30px 20px 30px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+  font-weight: bold;
+  font-size: 15px;
+  color: #116FAF;
+  transition:background-color 0.5s, color 0.5s;
+}
+.edit:hover {
+  background-color: #116FAF;
+  color: #fff;
+  cursor: pointer;
+  transition:background-color 0.5s, color 0.5s;
+}
+.edit svg path {
+  transition: fill 0.5s; 
+}
+.edit:hover svg path {
+  fill: #fff; /* Изменяем fill для всех path внутри SVG при наведении на кнопку */
+  transition: fill 0.5s; 
+}
+.signNotes {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #b9bdc1;
+
+  font-weight: bold;
+}
+.valueNotes {
+  font-size: 16px;
+
+  font-weight: bold;
+}
+
+.editSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}

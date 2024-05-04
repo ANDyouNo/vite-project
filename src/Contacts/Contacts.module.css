@@ -1,0 +1,177 @@
+.wrap {
+  display: flex;
+  
+}
+.direction {
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 23px 48px 20px 48px;
+  border: 1px solid #e9ebef;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+  font-weight: bold;
+  font-size: 15px;
+}
+.direction:hover {
+  background-color: #e9ebef;
+  border: 1px solid #e9ebef;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.phone {
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2460b2;
+  font-weight: bold;
+  font-size: 15px;
+}
+.name {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+.city {
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+.mail {
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.headers {
+  text-transform: uppercase;
+  color: #b9bdc1;
+  margin: 64px 0 8px 0;
+}
+
+table {
+  width: 100%; /* Задаем ширину таблицы на 100% */
+  border-collapse: collapse; /* Объединяем границы ячеек */
+  
+}
+
+tr {
+  display: flex;
+  justify-content: space-around;
+  padding: 22px 0 22px 0;
+  border-bottom: 1px solid #e9ebef;
+  align-items: center;
+}
+
+/* Я не знаю почему, но без этого все криво */
+tr:nth-child(1) {
+  border-bottom: 1px solid #e9ebef;
+  padding: 22px 0 22px 0;
+}
+
+.headers:nth-child(1) {
+  width: 22px;
+}
+.headers:nth-child(2) {
+  width:128px;
+}
+.headers:nth-child(3) {
+  width:110px;
+}
+.headers:nth-child(4) {
+  width: 303px;
+}
+.headers:nth-child(5) {
+  width: 161px;
+}
+.headers:nth-child(6) {
+  width: 107px;
+}
+
+.checkbox {
+
+}
+.tableBlock {
+  background-color: #fff;
+  border-radius: 10px;
+  max-height: 725px;
+  overflow: auto
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  margin-bottom: 28px;
+  align-items: center;
+}
+.header h1 {
+  font-size: 48px;
+  font-weight: lighter;
+}
+
+.addButton {
+  background-color: #116FAF;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 12px 30px 12px 30px;
+  border-radius: 6px;
+  transition: background-color .5s;
+}
+.addButton:hover {
+  cursor: pointer;
+  background-color: #62A9DA;
+  transition: background-color .5s;
+}
+
+.miniHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.miniHeader h2 {
+  margin: 30px;
+  font-size: 22px;
+}
+.events {
+  margin: 30px;
+}
+.events {
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 8px 20px 8px 20px;
+  border: 1px solid #e9ebef;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+  font-weight: bold;
+  font-size: 15px;
+}
+.events:hover {
+  background-color: #e9ebef;
+  border: 1px solid #e9ebef;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.leftSection {
+  padding: 35px;
+}
