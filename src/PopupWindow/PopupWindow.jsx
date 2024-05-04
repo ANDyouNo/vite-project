@@ -5,7 +5,7 @@ import niceWork from "../assets/niceWork.jpg";
 
 function PopupWindow({ onClose }) {
   return (
-    <div className={styles.popupContainer}>
+    <div className={styles.popupContainer} onClick={onClose}>
       <div className={styles.popup}>
         <div className={styles.closeBtn} onClick={onClose}>
           <Home></Home>
