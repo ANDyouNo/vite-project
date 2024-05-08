@@ -1,0 +1,16 @@
+.wrapper {
+  
+  display: flex;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 80px;
+  margin-bottom: 53px;
+  font-weight: normal;
+}
+
+
+.genSec {
+  padding: 35px;
+}

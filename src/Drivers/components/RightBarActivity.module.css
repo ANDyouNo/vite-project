@@ -1,0 +1,45 @@
+.wrap {
+  background-color: #fff;
+  height: 100vh;
+}
+
+.wrap h1 {
+  margin: 80px 64px 84px 30px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+}
+
+
+
+
+
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0px 15px 10px 15px;
+}
+.text{
+  font-size: 15px;
+}
+.highlightText {
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.date {
+  font-size: 12px;
+  color: #A1A6AC;
+  padding: 0 20px 0 0;
+  margin-bottom: 50px;
+}
+.messages {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  
+}

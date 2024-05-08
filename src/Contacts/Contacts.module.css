@@ -79,7 +79,7 @@ tr {
 }
 
 /* Я не знаю почему, но без этого все криво */
-tbody tr:nth-child(1) {
+tbody tr:nth-child(1) { 
   border-bottom: 1px solid #e9ebef;
   padding: 22px 0 22px 0;
 }
