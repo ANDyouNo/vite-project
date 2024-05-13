@@ -14,8 +14,8 @@ const Tabs = () => {
 
   const data = [
     {
-      name: "Логан Столяров",
-      phone: "+7 904 341 78 94",
+      name: "Райан Гослинг",
+      phone: "+8 800 555 35 35",
       direction: "Доставка по всему побережью",
       mail: "younofl312w@gmail.com",
       city: "Ростов-на-Дону",
